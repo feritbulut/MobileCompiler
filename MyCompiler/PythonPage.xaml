@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyCompiler.PythonPage"
+             Title="Python Documents">
+    <ScrollView>
+        <VerticalStackLayout Padding="20">
+            <Image Source="python" HeightRequest="60"/>
+            <Label Text="Python" FontSize="30" FontAttributes="Bold" HorizontalTextAlignment="Center" />
+            <Label Text='Python is an interpreted, high-level, and dynamically typed programming language known for its simple and readable syntax. It is widely used in web development, data science, artificial intelligence (AI), machine learning (ML), automation, scientific computing, and more.
+
+Pythons extensive standard library and third-party packages (such as NumPy, Pandas, TensorFlow, and Flask) make it one of the most versatile programming languages. Due to its ease of learning and strong community support, Python is an excellent choice for beginners and experienced developers alike. Companies such as Google, Facebook, and NASA heavily use Python for their software development needs.' 
+                   HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="16"/>
+
+            <Label Text="Best Websites to Learn Python:" FontSize="18" FontAttributes="Bold" Margin="0,15,0,10" HorizontalTextAlignment="Center" />
+
+            
+                <Label Text="• Python.org - Official Documentation" TextColor="Blue" HorizontalTextAlignment="Center">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OpenPythonOrg"/>
+                </Label.GestureRecognizers>
+            </Label>
+
+            
+                <Label Text="• Real Python" TextColor="Blue" HorizontalTextAlignment="Center">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OpenRealPython"/>
+                </Label.GestureRecognizers>
+            </Label>
+
+            
+            <Label Text="• GeeksforGeeks - Python" TextColor="Blue" HorizontalTextAlignment="Center">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OpenGeeksforGeeksPython"/>
+                </Label.GestureRecognizers>
+            </Label>
+
+            
+            <Label Text="• W3Schools - Python" TextColor="Blue" HorizontalTextAlignment="Center">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OpenW3SchoolsPython"/>
+                </Label.GestureRecognizers>
+            </Label>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyCompiler.CsharpPage"
+             Title="C# Documents">
+    
+    <ScrollView>
+        <VerticalStackLayout Padding="20">
+            <Image Source="csharp" HeightRequest="60"/>
+            <Label Text="C#" FontSize="30" FontAttributes="Bold" HorizontalTextAlignment="Center" />
+            <Label Text='C# (C-Sharp) is a modern, object-oriented programming language developed by Microsoft as part of the .NET framework. It is designed for building Windows applications, enterprise software, web applications, and game development using Unity.
+
+C# offers strong type safety, garbage collection, and excellent integration with the .NET ecosystem. It is widely used in business applications, cloud-based services, and cross-platform development (via .NET Core and MAUI). Its syntax is similar to Java and C++, making it easy to learn for developers familiar with those languages.
+
+Microsoft provides extensive documentation and tools to support C# development, making it a preferred choice for professional software development.' 
+                   HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="16"/>
+
+            <Label Text="Best Websites to Learn C#:" FontSize="18" FontAttributes="Bold" Margin="0,15,0,10" HorizontalTextAlignment="Center" />
+
+            <!-- Oracle Java Tutorials -->
+            <Label Text="• Microsoft Learn - C#" TextColor="Blue" HorizontalTextAlignment="Center">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OpenCsTutorial"/>
+                </Label.GestureRecognizers>
+            </Label>
+
+            <!-- Codecademy - Learn Java -->
+            <Label Text="• C# Station" TextColor="Blue" HorizontalTextAlignment="Center">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OpenCodecademyCs"/>
+                </Label.GestureRecognizers>
+            </Label>
+
+            <!-- GeeksforGeeks - Java -->
+            <Label Text="• W3Schools - C#" TextColor="Blue" HorizontalTextAlignment="Center">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OpenGeeksForGeeksCs"/>
+                </Label.GestureRecognizers>
+            </Label>
+
+            <!-- W3Schools - Java -->
+            <Label Text="• GeeksforGeeks - C#" TextColor="Blue" HorizontalTextAlignment="Center">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OpenW3SchoolsCs"/>
+                </Label.GestureRecognizers>
+            </Label>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

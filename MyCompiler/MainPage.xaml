@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:MyCompiler"
+             x:Class="MyCompiler.MainPage">
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="10">
+            <Label Text="Choose a compilers:" FontSize="20" HorizontalOptions="Center"/>
+            <Grid ColumnSpacing="10" RowSpacing="10" VerticalOptions="Center" HorizontalOptions="Center" Margin="0,0,0,0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <Button ImageSource="java" Text="Java" BackgroundColor="#3c6382" Clicked="OnLanguageSelected" WidthRequest="150" HeightRequest="150"/>
+                <Button ImageSource="csharp" Grid.Row="0" Grid.Column="2" Text="C#" BackgroundColor="#3c6382" Clicked="OnLanguageSelected" WidthRequest="150" HeightRequest="150"/>
+                <Button ImageSource="c" Grid.Row="1" Grid.Column="0" Text="C++" BackgroundColor="#3c6382" Clicked="OnLanguageSelected" WidthRequest="150" HeightRequest="150"/>
+                <Button ImageSource="python" Grid.Row="3" Grid.Column="3" Text="Python" BackgroundColor="#3c6382" Clicked="OnLanguageSelected" WidthRequest="150" HeightRequest="150"/>
+            </Grid>
+            <Label Text="Useful Resources:" FontSize="20" HorizontalOptions="Center" Margin="0,14,0,0"/>
+
+            <Frame BackgroundColor="#f3a683">
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="GoToJavaPage"/>
+                </Frame.GestureRecognizers>
+                <HorizontalStackLayout>
+                    <Image Source="java" HeightRequest="50"/>
+                    <Label Text="Java Documents" VerticalOptions="Center" Margin="50,0,0,0" FontSize="20"/>
+                </HorizontalStackLayout>
+            </Frame>
+            <Frame BackgroundColor="#786fa6">
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="GoToCppPage"/>
+                </Frame.GestureRecognizers>
+                <HorizontalStackLayout>
+                    <Image Source="c" HeightRequest="50"/>
+                    <Label Text="C++ Documents" VerticalOptions="Center" Margin="50,0,0,0" FontSize="20"/>
+                </HorizontalStackLayout>
+            </Frame>
+            <Frame  BackgroundColor="#c44569">
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="GoToCsharpPage"/>
+                </Frame.GestureRecognizers>
+                <HorizontalStackLayout>
+                    <Image Source="csharp" HeightRequest="50"/>
+                    <Label Text="C# Documents" VerticalOptions="Center" Margin="50,0,0,0" FontSize="20"/>
+                </HorizontalStackLayout>
+            </Frame>
+
+            <Frame BackgroundColor="#778beb">
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="GoToPythonPage"/>
+                </Frame.GestureRecognizers>
+                <HorizontalStackLayout>
+                    <Image Source="python" HeightRequest="50"/>
+                    <Label Text="Python Documents" VerticalOptions="Center" Margin="50,0,0,0" FontSize="20"/>
+                </HorizontalStackLayout>
+            </Frame>
+            
+
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
