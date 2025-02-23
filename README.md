@@ -11,9 +11,6 @@ This is a **mobile compiler application** that allows you to write, compile, and
 ✅ **Live Compilation:** Real-time output from the compiler.  
 ✅ **Useful Resources:** Built-in documentation for each language.  
 
-## Screenshots  
-📸 *[Add screenshots of the app here]*  
-
 ## Installation  
 To run this app locally:  
 1. Clone the repository:  
